@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>To Do List App</h1>
+      <p class="profile">
+        <strong>Nama:</strong> John Doe | <strong>Jabatan:</strong> Developer
+      </p>
+      <p class="time" id="time">Waktu:</p>
+    </header>
+
+    <main>
+      <form id="todo-form">
+        <label for="task">Tugas</label>
+        <textarea
+          id="task"
+          placeholder="Tulis agenda kamu di sini..."
+        ></textarea>
+
+        <div class="tag-todo">
+          <div class="tag-priority">
+            <label for="priority">Prioritas:</label>
+            <select id="priority">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </div>
+
+          <div class="tag-date">
+            <label for="deadline">Tanggal Deadline:</label>
+            <input type="date" id="deadline" />
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button type="submit">Submit</button>
+          <button type="button" id="delete-all">Delete All</button>
+        </div>
+      </form>
+
+      <div class="to2do-lists">
+        <div class="list-container">
+          <h2>To Do</h2>
+          <ul id="todo-list"></ul>
+        </div>
+
+        <div class="list-container">
+          <h2>Done</h2>
+          <ul id="done-list"></ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

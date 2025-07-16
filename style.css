@@ -1,0 +1,192 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+h1 {
+  color: #ff5733;
+  margin: 0.2rem 0;
+}
+
+.profile,
+.time {
+  font-size: 0.9rem;
+}
+
+main {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+textarea,
+select,
+input[type="date"] {
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+textarea {
+  width: 100%;
+  flex: 2;
+}
+
+.tag-todo {
+  display: flex;
+  gap: 1rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+button {
+  flex: 1;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #eee;
+}
+
+button[type="submit"] {
+  background-color: #ccc;
+}
+
+#delete-all {
+  background-color: #ddd;
+}
+
+.list-container {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.list-container h2 {
+  text-align: center;
+  color: #ff5733;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+li.done {
+  color: #999;
+}
+
+li .text {
+  flex: 1;
+  margin-right: 0.5rem;
+}
+
+li .actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.deadline {
+  background: #f44336;
+  border: solid 1px #f85246;
+  border-radius: 48px;
+  padding: 4px 8px;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 20px;
+  -webkit-border-radius: 48px;
+  -moz-border-radius: 48px;
+  -ms-border-radius: 48px;
+  -o-border-radius: 48px;
+}
+
+.check-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+
+.todo-lists {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  color: #999;
+  background: #f9f9f9;
+  gap: 1rem;
+}
+
+.list-container {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  main {
+    padding: 0.5rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
