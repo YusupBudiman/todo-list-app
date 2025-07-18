@@ -8,20 +8,30 @@
   </head>
   <body>
     <header>
-      <h1>To Do List App</h1>
-      <p class="profile">
-        <strong>Nama:</strong> John Doe | <strong>Jabatan:</strong> Developer
-      </p>
-      <p class="time" id="time">Waktu:</p>
+      <nav class="navbar">
+        <h1>To Do List App</h1>
+        <img class="profile-img" src="images/profile.png" alt="Profile" />
+      </nav>
+
+      <!-- Modal -->
+      <div id="profile-modal" class="modal hidden">
+        <div class="modal-content">
+          <span id="close-modal" class="close-btn">&times;</span>
+          <p><strong>Nama:</strong> Yusup Budiman</p>
+          <p><strong>Jabatan:</strong> Karyawan</p>
+        </div>
+      </div>
     </header>
 
     <main>
       <form id="todo-form">
-        <label for="task">Tugas</label>
-        <textarea
-          id="task"
-          placeholder="Tulis agenda kamu di sini..."
-        ></textarea>
+        <div class="tag-content">
+          <label for="task">Tugas</label>
+          <textarea
+            id="task"
+            placeholder="Tulis agenda kamu di sini..."
+          ></textarea>
+        </div>
 
         <div class="tag-todo">
           <div class="tag-priority">
@@ -45,16 +55,14 @@
         </div>
       </form>
 
-      <div class="to2do-lists">
-        <div class="list-container">
-          <h2>To Do</h2>
-          <ul id="todo-list"></ul>
-        </div>
+      <div class="list-container">
+        <h2>To Do</h2>
+        <ul id="todo-list"></ul>
+      </div>
 
-        <div class="list-container">
-          <h2>Done</h2>
-          <ul id="done-list"></ul>
-        </div>
+      <div class="list-container">
+        <h2>Done</h2>
+        <ul id="done-list"></ul>
       </div>
     </main>
 
