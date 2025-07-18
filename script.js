@@ -45,7 +45,12 @@ function createTodoItem(task, priority, deadline) {
 
   const deadlineSpan = document.createElement("span");
   deadlineSpan.className = "deadline";
-  deadlineSpan.textContent = deadline ? `Deadline: ${deadline}` : "Deadline: -";
+  let formattedDeadline = "-";
+  if (deadline) {
+    const parts = deadline.split("-");
+    formattedDeadline = `${parts[2]}-${parts[1]}-${parts[0]}`;
+  }
+  deadlineSpan.textContent = `Deadline: ${formattedDeadline}`;
 
   const infoWrapper = document.createElement("div");
   infoWrapper.style.display = "flex";
